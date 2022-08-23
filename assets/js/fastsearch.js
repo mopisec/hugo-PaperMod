@@ -82,11 +82,6 @@ sInput.onkeyup = function (e) {
             // build our html if result exists
             let resultSet = ''; // our results bucket
 
-            for (let item in results) {
-                resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
-                    `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
-            }
-
             resList.innerHTML = resultSet;
             resultsAvailable = true;
             first = resList.firstChild;
